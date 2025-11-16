@@ -173,23 +173,29 @@ transportista-app/
 
 ## 🔧 Tecnologías Utilizadas
 ### 🎯 Backend
+```
 Tecnología	Versión	Uso
 Node.js	18+	Runtime JavaScript
 Express.js	4.18+	Framework Web
 PG	8.11+	Cliente PostgreSQL
 Dotenv	16.3+	Manejo de variables
+```
 
 ### 🗄️ Base de Datos
+```
 Componente	Detalle
 PostgreSQL	Sistema de base de datos relacional
 Tablas	1 tabla: conductores
 Conexión	Pool de conexiones con SSL
+```
 
 ### ☁️ Infraestructura
+```
 Servicio	Función
 Render.com	Hosting y despliegue automático
 PostgreSQL	Base de datos en la nube
 GitHub	Control de versiones y CI/CD
+```
 
 ## 🎓 Aprendizajes del Parcial
 ### 💡 Conceptos Implementados
@@ -248,6 +254,7 @@ Guía de PostgreSQL
 Render.com Documentation
 
 ## 👨‍💻 Desarrollado por
+```
 Estudiante de Desarrollo Web
 🎓 Proyecto académico para evaluación parcial
 🚀 Implementando mejores prácticas de desarrollo
@@ -258,6 +265,7 @@ Estudiante de Desarrollo Web
 ¿Preguntas? ¡No dudes en consultar!
 
 </div>
+```
 
 ## 🎨 VERSIÓN BONITA CON BADGES
 markdown
