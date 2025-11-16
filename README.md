@@ -91,21 +91,21 @@ Prerrequisitos
 
 🛠️ Configuración Local
 bash
-# 1. Clonar o crear proyecto
+### 1. Clonar o crear proyecto
 mkdir transportista-app
 cd transportista-app
 
-# 2. Inicializar proyecto Node.js
+### 2. Inicializar proyecto Node.js
 npm init -y
 
-# 3. Instalar dependencias
+### 3. Instalar dependencias
 npm install express pg dotenv
 
-# 4. Configurar variables de entorno
+### 4. Configurar variables de entorno
 echo "DATABASE_URL=postgresql://usuario:password@localhost:5432/transportista" > .env
 echo "PORT=3000" >> .env
 
-# 5. Ejecutar en desarrollo
+### 5. Ejecutar en desarrollo
 npm run dev
 🌐 Configuración Base de Datos
 sql
@@ -136,18 +136,18 @@ Deploy → Servicio disponible en URL pública
 ### 🧪 Pruebas de la API
 Pruebas con cURL
 bash
-# Health Check
+### Health Check
 curl https://tu-api.onrender.com/health
 
-# Registrar conductor
+### Registrar conductor
 curl -X POST https://tu-api.onrender.com/conductores \
   -H "Content-Type: application/json" \
   -d '{"nombre":"Maria","apellido":"Garcia","licencia":"LIC789","telefono":"555-9876"}'
 
-# Listar conductores
+### Listar conductores
 curl https://tu-api.onrender.com/conductores
 
-# Consultar conductor
+### Consultar conductor
 curl https://tu-api.onrender.com/conductores/LIC789
 Pruebas con Thunder Client (VS Code)
 Instalar extensión Thunder Client
@@ -166,28 +166,28 @@ transportista-app/
 ├── 📄 .gitignore        # Archivos ignorados por Git
 └── 📄 README.md         # Documentación
 
-### 🔧 Tecnologías Utilizadas
-## 🎯 Backend
+## 🔧 Tecnologías Utilizadas
+### 🎯 Backend
 Tecnología	Versión	Uso
 Node.js	18+	Runtime JavaScript
 Express.js	4.18+	Framework Web
 PG	8.11+	Cliente PostgreSQL
 Dotenv	16.3+	Manejo de variables
 
-## 🗄️ Base de Datos
+### 🗄️ Base de Datos
 Componente	Detalle
 PostgreSQL	Sistema de base de datos relacional
 Tablas	1 tabla: conductores
 Conexión	Pool de conexiones con SSL
 
-## ☁️ Infraestructura
+### ☁️ Infraestructura
 Servicio	Función
 Render.com	Hosting y despliegue automático
 PostgreSQL	Base de datos en la nube
 GitHub	Control de versiones y CI/CD
 
 ## 🎓 Aprendizajes del Parcial
-# 💡 Conceptos Implementados
+### 💡 Conceptos Implementados
 ✅ APIs RESTful con métodos HTTP adecuados
 
 ✅ Operaciones CRUD completas (Create, Read)
@@ -200,7 +200,7 @@ GitHub	Control de versiones y CI/CD
 
 ✅ Despliegue en la nube con Render.com
 
-# 🔄 Flujo de Desarrollo
+### 🔄 Flujo de Desarrollo
 Desarrollo Local → Pruebas en entorno controlado
 
 Control de Versiones → Git y GitHub
@@ -210,7 +210,7 @@ Integración Continua → Deploy automático en Render
 Pruebas en Producción → Verificación de funcionalidad
 
 ## 🚀 Próximas Mejoras
-# 🔮 Roadmap de Desarrollo
+### 🔮 Roadmap de Desarrollo
 Validación avanzada de datos de entrada
 
 Paginación para listas grandes
@@ -225,8 +225,8 @@ Métricas y monitoreo
 
 Tests automatizados
 
-# 📞 Soporte y Contacto
-# 🐛 Reportar Issues
+## 📞 Soporte y Contacto
+### 🐛 Reportar Issues
 Si encuentras algún problema, por favor:
 
 Verificar los logs en Render.com
@@ -254,9 +254,10 @@ Estudiante de Desarrollo Web
 
 </div>
 
-### 🎨 VERSIÓN BONITA CON BADGES
+## 🎨 VERSIÓN BONITA CON BADGES
 markdown
-# 🚗 API Transportista - Sistema de Gestión de Conductores
+
+### 🚗 API Transportista - Sistema de Gestión de Conductores
 
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)
 ![Express.js](https://img.shields.io/badge/Express.js-4.18%2B-blue)
@@ -264,17 +265,17 @@ markdown
 ![Render](https://img.shields.io/badge/Deploy-Render.com-purple)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## 📖 Descripción
+### 📖 Descripción
 Web Service académico desarrollado para el parcial de **Desarrollo Web**, implementando una API REST completa para gestión de conductores con arquitectura moderna y despliegue en la nube.
 
-## 🎯 Estado del Proyecto
+### 🎯 Estado del Proyecto
 | Componente | Estado | Despliegue |
 |------------|--------|------------|
 | **API Endpoints** | ✅ Completado | 🌐 Production |
 | **Base de Datos** | ✅ Completado | 🗄️ PostgreSQL |
 | **Documentación** | ✅ Completado | 📚 README.md |
 
-## 🚀 Quick Start
+### 🚀 Quick Start
 ```bash
 # Clonar y ejecutar
 git clone <repo>
