@@ -39,7 +39,7 @@
 text
 
 ### 🗃️ Modelo de Base de Datos
-```sql
+sql
 conductores (
   id SERIAL PRIMARY KEY,
   nombre VARCHAR(50) NOT NULL,
@@ -48,7 +48,8 @@ conductores (
   telefono VARCHAR(15),
   fecha_registro DATE DEFAULT CURRENT_DATE
 )
-📚 Endpoints Implementados
+
+### 📚 Endpoints Implementados
 🔹 Registrar Conductor
 POST /conductores
 
@@ -79,7 +80,8 @@ GET /
 
 bash
 GET /
-🚀 Instalación y Configuración
+
+### 🚀 Instalación y Configuración
 Prerrequisitos
 ✅ Node.js 18+ instalado
 
@@ -111,25 +113,27 @@ sql
 CREATE DATABASE transportista;
 
 -- La tabla se crea automáticamente al iniciar la aplicación
-☁️ Despliegue en Render.com
+### ☁️ Despliegue en Render.com
 📦 Configuración de Render
 Configuración	Valor
 Runtime	Node
 Build Command	npm install
 Start Command	npm start
 Environment	production
-🔑 Variables de Entorno en Render
+
+### 🔑 Variables de Entorno en Render
 env
 DATABASE_URL=postgresql://user:pass@host:port/database
 NODE_ENV=production
-🔄 Flujo de Despliegue
+
+### 🔄 Flujo de Despliegue
 Push a GitHub → Trigger automático en Render
 
 Build → Instalación de dependencias
 
 Deploy → Servicio disponible en URL pública
 
-🧪 Pruebas de la API
+### 🧪 Pruebas de la API
 Pruebas con cURL
 bash
 # Health Check
@@ -152,7 +156,7 @@ Importar colección de pruebas
 
 Ejecutar endpoints individualmente
 
-📊 Estructura del Proyecto
+### 📊 Estructura del Proyecto
 text
 transportista-app/
 ├── 📄 server.js          # Servidor principal y endpoints
@@ -161,25 +165,29 @@ transportista-app/
 ├── 📄 .env              # Variables de entorno (local)
 ├── 📄 .gitignore        # Archivos ignorados por Git
 └── 📄 README.md         # Documentación
-🔧 Tecnologías Utilizadas
-🎯 Backend
+
+### 🔧 Tecnologías Utilizadas
+## 🎯 Backend
 Tecnología	Versión	Uso
 Node.js	18+	Runtime JavaScript
 Express.js	4.18+	Framework Web
 PG	8.11+	Cliente PostgreSQL
 Dotenv	16.3+	Manejo de variables
-🗄️ Base de Datos
+
+## 🗄️ Base de Datos
 Componente	Detalle
 PostgreSQL	Sistema de base de datos relacional
 Tablas	1 tabla: conductores
 Conexión	Pool de conexiones con SSL
-☁️ Infraestructura
+
+## ☁️ Infraestructura
 Servicio	Función
 Render.com	Hosting y despliegue automático
 PostgreSQL	Base de datos en la nube
 GitHub	Control de versiones y CI/CD
-🎓 Aprendizajes del Parcial
-💡 Conceptos Implementados
+
+## 🎓 Aprendizajes del Parcial
+# 💡 Conceptos Implementados
 ✅ APIs RESTful con métodos HTTP adecuados
 
 ✅ Operaciones CRUD completas (Create, Read)
@@ -192,7 +200,7 @@ GitHub	Control de versiones y CI/CD
 
 ✅ Despliegue en la nube con Render.com
 
-🔄 Flujo de Desarrollo
+# 🔄 Flujo de Desarrollo
 Desarrollo Local → Pruebas en entorno controlado
 
 Control de Versiones → Git y GitHub
@@ -201,8 +209,8 @@ Integración Continua → Deploy automático en Render
 
 Pruebas en Producción → Verificación de funcionalidad
 
-🚀 Próximas Mejoras
-🔮 Roadmap de Desarrollo
+## 🚀 Próximas Mejoras
+# 🔮 Roadmap de Desarrollo
 Validación avanzada de datos de entrada
 
 Paginación para listas grandes
@@ -217,8 +225,8 @@ Métricas y monitoreo
 
 Tests automatizados
 
-📞 Soporte y Contacto
-🐛 Reportar Issues
+# 📞 Soporte y Contacto
+# 🐛 Reportar Issues
 Si encuentras algún problema, por favor:
 
 Verificar los logs en Render.com
@@ -227,14 +235,14 @@ Revisar la configuración de variables de entorno
 
 Probar los endpoints con los ejemplos proporcionados
 
-📚 Recursos Adicionales
+## 📚 Recursos Adicionales
 Documentación de Express.js
 
 Guía de PostgreSQL
 
 Render.com Documentation
 
-👨‍💻 Desarrollado por
+## 👨‍💻 Desarrollado por
 Estudiante de Desarrollo Web
 🎓 Proyecto académico para evaluación parcial
 🚀 Implementando mejores prácticas de desarrollo
@@ -244,8 +252,9 @@ Estudiante de Desarrollo Web
 ¡Proyecto completado exitosamente! 🎉
 ¿Preguntas? ¡No dudes en consultar!
 
-</div> ```
-🎨 VERSIÓN BONITA CON BADGES
+</div>
+
+### 🎨 VERSIÓN BONITA CON BADGES
 markdown
 # 🚗 API Transportista - Sistema de Gestión de Conductores
 
