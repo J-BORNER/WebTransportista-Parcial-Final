@@ -53,6 +53,7 @@ conductores (
 
 ### 📚 Endpoints Implementados
 🔹 Registrar Conductor
+```
 POST /conductores
 
 json
@@ -82,6 +83,7 @@ GET /
 
 bash
 GET /
+```
 
 ### 🚀 Instalación y Configuración
 Prerrequisitos
