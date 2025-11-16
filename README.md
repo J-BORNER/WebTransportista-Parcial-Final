@@ -259,13 +259,14 @@ Estudiante de Desarrollo Web
 🎓 Proyecto académico para evaluación parcial
 🚀 Implementando mejores prácticas de desarrollo
 💡 Aprendiendo backend con Node.js y PostgreSQL
+```
 
 <div align="center">
 ¡Proyecto completado exitosamente! 🎉
 ¿Preguntas? ¡No dudes en consultar!
 
 </div>
-```
+
 
 ## 🎨 VERSIÓN BONITA CON BADGES
 markdown
