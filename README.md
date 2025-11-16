@@ -39,6 +39,7 @@
 text
 
 ### 🗃️ Modelo de Base de Datos
+```
 sql
 conductores (
   id SERIAL PRIMARY KEY,
@@ -48,6 +49,7 @@ conductores (
   telefono VARCHAR(15),
   fecha_registro DATE DEFAULT CURRENT_DATE
 )
+```
 
 ### 📚 Endpoints Implementados
 🔹 Registrar Conductor
