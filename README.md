@@ -157,6 +157,7 @@ Importar colección de pruebas
 Ejecutar endpoints individualmente
 
 ### 📊 Estructura del Proyecto
+```
 transportista-app/
 ├── 📄 server.js          # Servidor principal y endpoints
 ├── 📄 database.js        # Configuración de PostgreSQL
@@ -164,6 +165,7 @@ transportista-app/
 ├── 📄 .env              # Variables de entorno (local)
 ├── 📄 .gitignore        # Archivos ignorados por Git
 └── 📄 README.md         # Documentación
+```
 
 ## 🔧 Tecnologías Utilizadas
 ### 🎯 Backend
