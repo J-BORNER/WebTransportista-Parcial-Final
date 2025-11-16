@@ -157,7 +157,6 @@ Importar colección de pruebas
 Ejecutar endpoints individualmente
 
 ### 📊 Estructura del Proyecto
-text
 transportista-app/
 ├── 📄 server.js          # Servidor principal y endpoints
 ├── 📄 database.js        # Configuración de PostgreSQL
