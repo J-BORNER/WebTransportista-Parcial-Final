@@ -1,5 +1,7 @@
 const { Pool } = require('pg');
+require('dotenv').config();
 
+// Configuración de la conexión a PostgreSQL
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
@@ -17,8 +19,22 @@ CREATE TABLE IF NOT EXISTS conductores (
 );
 `;
 
-pool.query(createTableQuery)
-  .then(() => console.log('✅ Tabla conductores verificada/creada'))
-  .catch(err => console.error('❌ Error creando tabla:', err));
+// Verificar conexión y crear tabla
+const initializeDatabase = async () => {
+  try {
+    const client = await pool.connect();
+    console.log('✅ Conectado a PostgreSQL');
+    
+    await client.query(createTableQuery);
+    console.log('✅ Tabla "conductores" verificada/creada');
+    
+    client.release();
+  } catch (error) {
+    console.error('❌ Error inicializando base de datos:', error.message);
+    process.exit(1);
+  }
+};
+
+initializeDatabase();
 
 module.exports = pool;
